@@ -1,5 +1,8 @@
 [TOC]
 
+B站，水论文的程序猿，https://space.bilibili.com/383551518，独立开发
+开源代码供粉丝、同学们研究，禁止商用，盗版侵权必究
+
 # 百度学术代码思路
 
 1. 用pyinstaller打包成exe程序
