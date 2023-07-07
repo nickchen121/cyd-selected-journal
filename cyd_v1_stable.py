@@ -120,7 +120,12 @@ class BaiduXueshuAutomatic:
                 try:
                     paper_name = first_url.find_element_by_xpath('div[1]/h3/a')
                     paper_link = paper_name.get_attribute("href")
-                    paper_name = paper_name.text
+
+                    # 添加发文时间
+                    paper_date = first_url.find_element_by_xpath('div[1]/div[2]/span[last()]')
+                    paper_date = paper_date.text
+                    
+                    paper_name ="[" + paper_date +  "]" + paper_name.text
                 except:
                     print('请检查软件打开的谷歌浏览器是否被人为（异常）终止，程序运行期间不要关谷歌闭浏览器，谢谢配合。\n')
                     break
